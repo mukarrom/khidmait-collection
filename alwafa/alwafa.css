@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+hr {
+	margin: 0.5rem 0;
+	color: #000;
+	border: 0;
+	border-top: 1px solid;
+	opacity: 0.25;
+}
+.page {
+	width: 559.37px;
+	height: 793.7px;
+	/* border: 1px solid red; */
+	margin: auto;
+	padding: 1rem 10px;
+}
+
+/* header */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.logo {
+	width: 150px;
+	height: auto;
+}
+.logo img {
+	width: 100%;
+}
+p {
+	font-size: 12px;
+	/* font-weight: 600; */
+}
+.header div:first-child {
+	width: 50%;
+}
+.header div:last-child {
+	text-align: end;
+}
+.header div:last-child h4 {
+	color: #999999;
+	text-transform: uppercase;
+}
+
+/* 2nd section */
+section:nth-child(2) {
+	display: flex;
+	gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+section:nth-child(2) div:first-child {
+	width: 50%;
+}
+section:nth-child(2) div:first-child p:last-child {
+	color: #302e2e;
+}
+/* 3rd section: phone & email */
+section:nth-child(3) {
+  margin: 1rem 0;
+}
+/* 4th section: table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+th:last-child {
+  width: 20%;
+}
+td:last-child {
+  text-align: end;
+}
+th, td {
+  text-align: left;
+  padding: 4px 12px;
+  border: 1px solid #999999;
+}
+
+tr:nth-child(odd){
+  background-color: #f2f2f2
+}
+
+th {
+  background-color: #cccccc;
+  color: #000;
+  text-align: center;
+}
+/* 5th section: total */
+section:nth-child(5) {
+  display: flex;
+  justify-content: end;
+  margin: 2rem 0;
+  gap: 1rem;
+  text-align: end;
+}
+
+section:nth-child(5) div p {
+  padding:4px 0;
+}
+section:nth-child(5) div:last-child {
+  width: 20%;
+}
+section:nth-child(5) div:last-child p {
+ border: 1px solid #524d4d;
+ padding: 4px;
+}
+
+section:nth-child(5) div:last-child p:nth-child(2) {
+  background-color: #f9f515;
+}
+section:nth-child(5) div:last-child p:last-child {
+  background-color: #f2f2f2;
+}
+
+/* Amount in word */
+.in-word {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+}
+.in-word span {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* signature */
+.signature {
+  display: flex;
+  justify-content: end;
+  margin: 5rem 0;
+}
