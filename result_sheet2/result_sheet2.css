@@ -1,13 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+/**
+* ==> A4 size <==
+* width: 816px;
+* height: 1344px;
+*/
+/* Print Setting */
+@media print {
+	@page {
+		size: 1344px 816px;
+		size: landscape;
+		margin: 0.5rem;
+	}
 }
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	-webkit-print-color-adjust: exact !important;
 	print-color-adjust: exact !important;
+	font-family: 'Kalpurush', sans-serif;
   text-align: center;
 }
+/* ==> Container <== */
+.container {
+	height: 100%;
+	width: 100%;
+	/* border: 1px solid black; */
+	position: relative;
+}
+/* /////////////////// */
+
+
 .table-header {
   display: flex;
   justify-content: center;

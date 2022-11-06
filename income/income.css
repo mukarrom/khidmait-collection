@@ -1,23 +1,47 @@
 @import url('https://fonts.maateen.me/kalpurush/font.css');
 
+/**
+* ==> A4 size <==
+* width: 793.7px;
+* height: 1122.5px;
+*/
+/* Print Setting */
+@media print {
+	@page {
+		size: 1122.5px 793.7px;
+		size: landscape;
+		margin: 1rem;
+	}
+}
+/* reset */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: kalpurush;
 }
+
 body {
 	-webkit-print-color-adjust: exact !important;
 	print-color-adjust: exact !important;
+	font-family: 'Kalpurush', sans-serif;
 }
-
+/* ==> Container <== */
+.container {
+	height: 793px;
+	width: 1122px;
+	border: 1px solid black;
+	position: relative;
+}
+/* ==> header <== */
 header {
 	text-align: center;
+	margin: 1rem auto auto auto;
 }
 header .college-name {
 	font-size: 28px;
 	font-weight: 900;
-    color: green;
+	line-height: 1;
+	color: green;
 }
 header .about {
 	font-size: 14px;
@@ -25,43 +49,48 @@ header .about {
 header .address {
 	font-size: 16px;
 	font-weight: 600;
-    color: brown;
+	color: brown;
+	line-height: 1;
 }
 header .income {
 	font-size: 20px;
 	font-weight: 700;
-    color: rgb(6, 69, 132);
+	color: rgb(6, 69, 132);
 }
-/* main-table */
+/* ==> Table <== */
 table {
 	width: 100%;
 	text-align: center;
 	border-collapse: collapse;
-    font-size: 12px;
+	font-size: 12px;
 }
 table thead {
-    background-color: green;
-    color: white;
+	background-color: green;
+	color: white;
 }
 table tbody tr:nth-child(even) {
-    background-color: rgb(241, 252, 227);
+	background-color: rgb(241, 252, 227);
 }
 tr,
 th,
 td {
 	border: 1px solid;
 }
-th, td {
-    padding: 2px 5px;
+th,
+td {
+	padding: 2px 5px;
 }
 tfoot {
-    color: #044b17;
-    font-weight: 700;
+	color: #044b17;
+	font-weight: 700;
 }
 /* footer */
 /* signature */
 .signature {
-	margin:3rem 2rem 0.5rem 2rem;
+	/* position: absolute;
+	bottom: 0;
+	left: 0; */
+	margin: 3rem 2rem 0.5rem 2rem;
 	display: flex;
 	justify-content: space-between;
 }

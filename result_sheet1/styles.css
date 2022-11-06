@@ -1,43 +1,36 @@
-/* @import url('https://fonts.maateen.me/kalpurush/font.css'); */
+@import url('https://fonts.maateen.me/kalpurush/font.css');
 
-/* Bootstrap CSS Copy */
-*,
-*::before,
-*::after {
+
+@media print {
+	@page {
+		size: 793.7px 1122.5px;
+		/* size: portrait; */
+		margin: 0.5rem;
+	}
+}
+/* reset */
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	:root {
-		scroll-behavior: smooth;
-	}
-}
-
 body {
 	-webkit-print-color-adjust: exact !important;
 	print-color-adjust: exact !important;
-	margin: 0;
-	font-family: system-ui, -apple-system, 'Kalpurush', 'Segoe UI', Roboto,
-		'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	background-color: #fff;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: 'Kalpurush', sans-serif;
 }
+/* ==> Container <== */
+.container {
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid black; */
+	position: relative;
+}
+/* /////////////////// */
 
-hr {
-	margin: 1rem 0;
-	color: inherit;
-	border: 0;
-	border-top: 1px solid;
-	opacity: 0.25;
-}
+/* Bootstrap CSS Copy */
+
 
 h6,
 .h6,
@@ -117,11 +110,11 @@ p {
 	margin-bottom: 1rem;
 }
 /* -----------> End Bootstrap CSS <------------- */
-.wrap {
+/* .wrap {
 	width: 796px;
 	height: 1123px;
 	position: relative;
-}
+} */
 .header-section {
 	width: 100%;
 }
@@ -169,7 +162,9 @@ p {
 	justify-content: space-between;
 	/* width: 100%; */
 }
-.information .student-info {width: 75%;}
+.information .student-info {
+	width: 75%;
+}
 .information .student-info div {
 	display: flex;
 	justify-content: start;
@@ -193,7 +188,7 @@ table {
 	font-size: 12px;
 }
 .marks-roll th,
-.marks-roll td{
+.marks-roll td {
 	border: 1px solid black;
 }
 .marks-roll th {
@@ -207,73 +202,30 @@ table {
 .marks table {
 	width: 100%;
 }
-.marks>table>thead th {
+.marks > table > thead th {
 	width: 40px;
 }
-.marks>table>thead th:nth-child(2) {
+.marks > table > thead th:nth-child(2) {
 	width: 100%;
 }
-.marks>table>thead th,
-.marks>table>tbody td,
-.marks>table>tfoot>tr:last-child td
-{
+.marks > table > thead th,
+.marks > table > tbody td,
+.marks > table > tfoot > tr:last-child td {
 	border: 1px solid black;
 	padding: 5px 8px;
 }
-.marks>table>tbody td:nth-child(2),
-.marks>table>tfoot>tr:last-child td:nth-child(2)
-{
+.marks > table > tbody td:nth-child(2),
+.marks > table > tfoot > tr:last-child td:nth-child(2) {
 	text-align: left;
 }
 .no-border {
 	text-align: left;
 	font-weight: bold;
 }
-/* -----------------------------
-			Summary
-------------------------------- */
-.summary {
-	margin: 50px 10px;
-}
-.summary table {
-	width: 100%;
-}
 
-.summary th,
-.summary td{
-	border: 1px solid black;
-	padding: 5px;
-}
-.summary th {
-	text-align: right;
-	padding: 5px 20px;
-}
-
-/* signature */
-.signature {
-    margin: 5rem 0 2rem;
-    display: flex;
-    justify-content: space-around;
-	width: 100%;
-	position: absolute;
-	bottom: 10px;
-}
-.signature .parent,
-.signature .convener,
-.signature .principal {
-    position: relative;
-}
-.parent span::before,
-.convener span::before,
-.principal span::before {
-    content: "";
-    background-color: rgb(65, 61, 61);
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: -5px;
-}
-/* total */
+/* ----------------
+		 total 
+ ----------------*/
 .total {
 	display: flex;
 	gap: 10px;
@@ -299,4 +251,49 @@ table {
 .total div span:last-child {
 	color: white;
 	padding: 5px;
+}
+
+/* -----------------------------
+			Summary
+------------------------------- */
+.summary {
+	margin: 5px 10px;
+}
+.summary table {
+	width: 100%;
+}
+
+.summary th,
+.summary td {
+	border: 1px solid black;
+	padding: 5px;
+}
+.summary th {
+	text-align: right;
+	padding: 5px 20px;
+}
+
+/* signature */
+.signature {
+	margin-top: 4rem;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	/* position: absolute;
+	bottom: 10px; */
+}
+.signature .parent,
+.signature .convener,
+.signature .principal {
+	position: relative;
+}
+.parent span::before,
+.convener span::before,
+.principal span::before {
+	content: '';
+	background-color: rgb(65, 61, 61);
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: -5px;
 }

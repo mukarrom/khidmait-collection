@@ -1,31 +1,65 @@
 @import url('https://fonts.maateen.me/kalpurush/font.css');
 
+/**
+* ==> A4 size <==
+* width: 793.7px;
+* height: 1122.5px;
+*/
+/* Print Setting */
+@media print {
+	@page {
+		size: 1122.5px 793.7px;
+		size: landscape;
+		margin: 0.5rem;
+	}
+}
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	-webkit-print-color-adjust: exact !important;
 	print-color-adjust: exact !important;
-  margin: 0;
-  padding: 2rem;
-  box-sizing: border-box;
-  font-family: 'Kalpurush', Arial, sans-serif !important;
+	font-family: 'Kalpurush', sans-serif;
 }
-/* --------- header ---------- */
+/* ==> Container <== */
+.container {
+	height: 793px;
+	width: 1122px;
+	border: 1px solid black;
+	position: relative;
+}
+/* /////////////////// */
+
+/* ==> header <== */
 header {
-  text-align: center;
-  line-height: 0.5;
+	text-align: center;
+	margin: 1rem auto auto auto;
 }
 header .college-name {
-  color: green;
-  font-weight: 900;
+	font-size: 28px;
+	font-weight: 900;
+	line-height: 1;
+	color: green;
 }
 header .about {
-  color: chocolate;
+	font-size: 14px;
 }
 header .address {
-  color: blueviolet;
+	font-size: 16px;
+	font-weight: 600;
+	color: brown;
+	line-height: 1;
 }
-header .title {
-  color: blue;
+header .income {
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(6, 69, 132);
 }
+/* ////////////////////////////////// */
 
 /* ------- table -------- */
 table {

@@ -1,15 +1,39 @@
 @import url('https://fonts.maateen.me/kalpurush/font.css');
 
+/**
+* ==> A4 size <==
+* width: 559.37px;
+* height: 793.7px;
+*/
+/* Print Setting */
+@media print {
+	@page {
+		size: 559.37px 793.7px;
+		size: portrait;
+		margin: 0.5rem;
+	}
+}
+/* reset */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	-webkit-print-color-adjust: exact !important;
 	print-color-adjust: exact !important;
 	font-family: 'Kalpurush', sans-serif;
 }
+/* ==> Container <== */
+.container {
+	width: 559px;
+	height: 793px;
+	border: 1px solid black;
+	position: relative;
+}
+/* /////////////////// */
+
 .invoice {
 	height: 210mm;
 	width: 148.5mm;

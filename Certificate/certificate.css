@@ -1,3 +1,17 @@
+/**
+* ==> A4 size <==
+* width: 793.7px;
+* height: 1122.5px;
+*/
+/* Print Setting */
+/* @media print {
+	@page {
+		size: 1122.5px 793.7px;
+		size: landscape;
+		margin: 1rem;
+	}
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @font-face {
@@ -9,7 +23,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* font-weight: 200; */
 }
 body {
 	-webkit-print-color-adjust: exact !important;
