@@ -4,7 +4,7 @@
 @media print {
 	@page {
 		size: 793.7px 559.37px;
-    size: landscape;
+    /* size: landscape; */
 		margin: 0;
 	}
 }
