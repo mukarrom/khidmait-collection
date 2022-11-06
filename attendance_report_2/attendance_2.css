@@ -5,7 +5,7 @@
 * width: 793.7px;
 * height: 1122.5px;
 */
-
+/* Print Setting */
 @media print {
 	@page {
 		size: 1122.5px 793.7px;
@@ -13,228 +13,103 @@
 		margin: 1rem;
 	}
 }
-
-/* Bootstrap CSS Copy */
-*,
-*::before,
-*::after {
+/* reset */
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	:root {
-		scroll-behavior: smooth;
-	}
-}
-
 body {
 	-webkit-print-color-adjust: exact !important;
 	print-color-adjust: exact !important;
-	margin: 0;
-	font-family: system-ui, -apple-system, 'Kalpurush', 'Segoe UI', Roboto,
-		'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	background-color: #fff;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: 'Kalpurush', sans-serif;
 }
-
-hr {
-	margin: 1rem 0;
-	color: inherit;
-	border: 0;
-	border-top: 1px solid;
-	opacity: 0.25;
+/* ==> Container <== */
+.container {
+	height: 793px;
+	width: 1122px;
+	border: 1px solid black;
+	position: relative;
 }
-
-h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
-h3,
-.h3,
-h2,
-.h2,
-h1,
-.h1 {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-	font-weight: 500;
-	/* line-height: 1.2; */
+/* ==> Header <== */
+ .header {
+	width: 100%;
+	height: 110px;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+}
+.logo {
+	width: 120px;
+	height: 110px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+/* ==> header texts <== */
+.header .college-name {
+	line-height: 1;
+	color: #3b38a7;
+}
+.header .month {
 	line-height: 1;
 }
-
-h1,
-.h1 {
-	font-size: calc(1.375rem + 1.5vw);
-}
-@media (min-width: 1200px) {
-	h1,
-	.h1 {
-		font-size: 2.5rem;
-	}
+.heading-hazira {
+	color: #9647b3;
 }
 
-h2,
-.h2 {
-	font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-	h2,
-	.h2 {
-		font-size: 2rem;
-	}
-}
-
-h3,
-.h3 {
-	font-size: calc(1.3rem + 0.6vw);
-}
-@media (min-width: 1200px) {
-	h3,
-	.h3 {
-		font-size: 1.75rem;
-	}
-}
-
-h4,
-.h4 {
-	font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-	h4,
-	.h4 {
-		font-size: 1.5rem;
-	}
-}
-
-h5,
-.h5 {
-	font-size: 1.25rem;
-}
-
-h6,
-.h6 {
-	font-size: 1rem;
-}
-
-p {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-/* -----------> End Bootstrap CSS <------------- */
-
-.header-section {
-	width: 100%;
-	/* height: 150px; */
-	display: flex;
-	line-height: 0.5;
-	border: #022b2f solid 1px;
-}
-.header-section > .logo {
-	background-color: #022b2f;
-	width: 150px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	margin: 0 5px 0 0;
-}
-.header-section .headings {
-	width: 100%;
-	text-align: center;
-	padding: 5px 0;
-}
-.header-section .headings h2 {
-	color: blue;
-	font-weight: 600;
-}
-.header-section .headings .address {
-	font-weight: 600;
-}
-.header-section .headings .heading-hazira {
-	color: blueviolet;
-}
-
-.header-section .headings .month {
-	color: rgb(15, 142, 146);
-	font-weight: 600;
-}
-
-/* ------------ header section end ------------ */
-/* Select options */
+/* !\ ==> Select options <==\! */
 .select {
 	display: flex;
-	gap: 0 10px;
+	gap: 2%;
 	padding: 5px;
 }
-.select label {
-	color: blue;
-	font-weight: 500;
-	margin-right: 5px;
-}
-.select select {
-	padding: 5px;
-	width: 90px;
-	font-weight: 600;
-}
 
-.select .search {
-	border: #022b2f solid 1px;
-	border-radius: 5px;
-	padding: 0 5px;
-	background-color: blue;
+.section {
+	display: flex;
+	gap: 5px;
+	align-items: center;
 }
-.select input {
-	width: 100px;
-	padding: 5px;
+.section p:first-child {
+	color: #3b38a7;
+	font-weight: bold;
 }
-.search label {
-	color: white;
-	font-weight: 600;
-}
-
-/* table */
-
-.table {
+.section p:last-child {
+	width: 4rem;
 	border: 1px solid gray;
-	height: 45vh;
+	padding: 2px;
+	text-align: center;
 }
+/* !/==> Table <==\! */
 .table table {
 	width: 100%;
 	border-collapse: collapse;
 }
-th {
+.table table th {
 	background-color: #022b2f;
 	color: white;
 }
-table,
-td,
-th {
+
+.table table td,
+.table table th {
 	border: 1px solid #ddd;
-	text-align: left;
 	text-align: center;
+	padding: 3px 5px;
 }
+/* ----------------------- */
 
-table {
-	border-collapse: collapse;
-	width: 100%;
-}
 
-th,
-td {
-	padding: 8px;
-}
 /* total */
 .total {
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	display: flex;
 	gap: 10px;
 	margin: 20px;
