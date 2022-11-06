@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+@media print {
+	@page {
+		size: 793.7px 559.37px;
+    size: landscape;
+		margin: 0;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
