@@ -25,13 +25,14 @@
 			@page {
 				size: A4 landscape;
 			}
+			body {
+				-webkit-print-color-adjust: exact !important;
+				print-color-adjust: exact !important;
+			}
 		</style>
 	</head>
 	<body class="A4 landscape">
-		<!-- Each sheet element should have the class "sheet" -->
-		<!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
 		<section class="sheet padding-10mm">
-			<!-- Write HTML just like a web page -->
 			<section class="main container">
 				<div class="main-box">
 					<!-- Header box -->

@@ -6,97 +6,120 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Al Wafa</title>
 		<link rel="stylesheet" href="alwafa.css" />
+		<!-- Normalize or reset CSS with your favorite library -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+
+		<!-- Load paper.css for happy printing -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css"
+		/>
+
+		<!-- Set page size here: A5, A4 or A3 -->
+		<!-- Set also "landscape" if you need -->
+		<style>
+			@page {
+				size: A5;
+			}
+		</style>
 	</head>
-	<body>
-		<div class="page">
-			<section class="header">
-				<div class="left">
-					<div class="logo">
-						<img src="./AlWafa logo.png" alt="logo" />
+	<body class="A5">
+		<section class="sheet padding-10mm">
+			<div class="page">
+				<section class="header">
+					<div class="left">
+						<div class="logo">
+							<img src="./AlWafa logo.png" alt="logo" />
+						</div>
+						<p>Umm Al Dome, North Muaither, Building - 85 Zone - 53.</p>
+						<p>Phone: 974 666 988 16, 974 44789092</p>
+						<p>
+							Email:
+							<a href="mailto:alwafatravelqatar@gmail.com"
+								>alwafatravelqatar@gmail.com</a
+							>
+						</p>
 					</div>
-					<p>Umm Al Dome, North Muaither, Building - 85 Zone - 53.</p>
-					<p>Phone: 974 666 988 16, 974 44789092</p>
-					<p>
-						Email:
-						<a href="mailto:alwafatravelqatar@gmail.com"
-							>alwafatravelqatar@gmail.com</a
-						>
-					</p>
-				</div>
-				<div class="right">
-					<h4>invoice #</h4>
-					<p>Invoice Date: <span>2022-9-26</span></p>
-				</div>
-			</section>
-			<section>
-				<div>
-					<p><b>Bill To:</b></p>
-					<hr />
-					<p>MS SHAIKHA SALEH R A</p>
-				</div>
-				<div>
-					<p class=""><b>Booking Reference: 2M3BSQ</b></p>
-				</div>
-			</section>
-			<section>
-				<p>Phone:</p>
-				<p>Email:</p>
-			</section>
-			<section>
-				<table>
-					<tr>
-						<th>SL</th>
-						<th>Description</th>
-						<th>Price</th>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>26 SEP DOH-CAI / QATAR AIRWAYS / BUSINESS CLASS</td>
-						<td>3650</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>5</td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
-			</section>
-			<section>
-				<div>
-					<p>Subtotal</p>
-					<p><b>Balance Due</b></p>
-					<p><b>Paid</b></p>
-				</div>
-				<div>
-					<p>1</p>
-					<p>2</p>
-					<p>3</p>
-				</div>
-			</section>
-			<!-- amount in word -->
-			<p class="in-word">Amount in word: <span>Three Thousand Six Hundred Fifty QR only</span></p>
-			<!-- signature -->
-			<section class="signature">
-				<div>
-					<p><b>Abdul Kadir Mohiuddin</b></p>
-				<p>Reservation & Ticketing</p>
-				</div>
-			</section>
-		</div>
+					<div class="right">
+						<h4>invoice #</h4>
+						<p>Invoice Date: <span>2022-9-26</span></p>
+					</div>
+				</section>
+				<section>
+					<div>
+						<p><b>Bill To:</b></p>
+						<hr />
+						<p>MS SHAIKHA SALEH R A</p>
+					</div>
+					<div>
+						<p class=""><b>Booking Reference: 2M3BSQ</b></p>
+					</div>
+				</section>
+				<section>
+					<p>Phone:</p>
+					<p>Email:</p>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<th>SL</th>
+							<th>Description</th>
+							<th>Price</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>26 SEP DOH-CAI / QATAR AIRWAYS / BUSINESS CLASS</td>
+							<td>3650</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<div>
+						<p>Subtotal</p>
+						<p><b>Balance Due</b></p>
+						<p><b>Paid</b></p>
+					</div>
+					<div>
+						<p>1</p>
+						<p>2</p>
+						<p>3</p>
+					</div>
+				</section>
+				<!-- amount in word -->
+				<p class="in-word">
+					Amount in word: <span>Three Thousand Six Hundred Fifty QR only</span>
+				</p>
+				<!-- signature -->
+				<section class="signature">
+					<div>
+						<p><b>Abdul Kadir Mohiuddin</b></p>
+						<p>Reservation & Ticketing</p>
+					</div>
+				</section>
+			</div>
+		</section>
 	</body>
 </html>

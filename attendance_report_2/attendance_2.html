@@ -7,98 +7,127 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>per student monthly Attendance Report</title>
 		<link rel="stylesheet" href="./attendance_2.css" />
+		<!-- Normalize or reset CSS with your favorite library -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+
+		<!-- Load paper.css for happy printing -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css"
+		/>
+
+		<!-- Set page size here: A5, A4 or A3 -->
+		<!-- Set also "landscape" if you need -->
+		<style>
+			@page {
+				size: A4 landscape;
+			}
+		</style>
 	</head>
-	<body>
-		<section class="container">
-			<!-- logo and header -->
-			<div class="header">
-				<div class="logo">
-					<img src="Education_Logo.png" alt="" />
+
+	<!-- Set "A5", "A4" or "A3" for class name -->
+	<!-- Set also "landscape" if you need -->
+	<body class="A4 landscape">
+		<!-- Each sheet element should have the class "sheet" -->
+		<!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+		<section class="sheet padding-10mm">
+			<!-- Write HTML just like a web page -->
+			<section class="container">
+				<!-- logo and header -->
+				<div class="header">
+					<div class="logo">
+						<img src="Education_Logo.png" alt="" />
+					</div>
+					<h2 class="college-name">
+						রফিকুল ইসলাম মহিলা কলেজ (ভৈরব, কিশোরগঞ্জ)
+					</h2>
+					<h4 class="address">ভৈরবপুর উত্তর পাড়া (ভৈরব, কিশোরগঞ্জ)</h4>
+					<!-- <p class="contact">০১৭১১-৩৩১৬৩০, sharifuddinahmed1962@gmail.com</p> -->
+					<h3 class="heading-hazira">হাজিরা রিপোর্ট (একাদশ - বিজ্ঞান)</h3>
+					<h3 class="month">অক্টোবর 2022</h3>
 				</div>
-				<h2 class="college-name">রফিকুল ইসলাম মহিলা কলেজ (ভৈরব, কিশোরগঞ্জ)</h2>
-				<h4 class="address">ভৈরবপুর উত্তর পাড়া (ভৈরব, কিশোরগঞ্জ)</h4>
-				<!-- <p class="contact">০১৭১১-৩৩১৬৩০, sharifuddinahmed1962@gmail.com</p> -->
-				<h3 class="heading-hazira">হাজিরা রিপোর্ট (একাদশ - বিজ্ঞান)</h3>
-				<h3 class="month">অক্টোবর 2022</h3>
-			</div>
-			<!-- select section -->
-			<section class="select">
-				<div class="section">
-					<p class="name">মাস</p>
-					<p class="value">ডিসেম্বর</p>
-				</div>
-				<div class="section">
-					<p class="name">সাল</p>
-					<p class="value">২০২২</p>
-				</div>
-				<div class="section">
-					<p class="name">শ্রেণি</p>
-					<p class="value">দশম</p>
-				</div>
-				<div class="section">
-					<p class="name">শাখা</p>
-					<p class="value">ক</p>
-				</div>
-				<!-- <div class="search">
+				<!-- select section -->
+				<section class="select">
+					<div class="section">
+						<p class="name">মাস</p>
+						<p class="value">ডিসেম্বর</p>
+					</div>
+					<div class="section">
+						<p class="name">সাল</p>
+						<p class="value">২০২২</p>
+					</div>
+					<div class="section">
+						<p class="name">শ্রেণি</p>
+						<p class="value">দশম</p>
+					</div>
+					<div class="section">
+						<p class="name">শাখা</p>
+						<p class="value">ক</p>
+					</div>
+					<!-- <div class="search">
 					<label for="">আইডি</label>
 					<input type="text" name="" id="" />
 					<label for="">খুজুন</label>
 				</div> -->
-			</section>
-			<!-- Select end -->
+				</section>
+				<!-- Select end -->
 				<!-- Table -->
 				<div class="table">
 					<table>
 						<thead>
 							<tr>
-							<th>ক্রমিক</th>
-							<th>রোল</th>
-							<th>শিক্ষার্থীর নাম</th>
-							<th>রিপোর্ট</th>
-							<th>উপস্থিত</th>
-							<th>%</th>
-							<th>অনুপস্থিত</th>
-							<th>%</th>
-							<th>জরিমানা</th>
-						</tr>
+								<th>ক্রমিক</th>
+								<th>রোল</th>
+								<th>শিক্ষার্থীর নাম</th>
+								<th>রিপোর্ট</th>
+								<th>উপস্থিত</th>
+								<th>%</th>
+								<th>অনুপস্থিত</th>
+								<th>%</th>
+								<th>জরিমানা</th>
+							</tr>
 						</thead>
 						<tbody>
 							<tr>
-							<td>text1</td>
-							<td>text2</td>
-							<td>text3</td>
-							<td>text4</td>
-							<td>text5</td>
-							<td>text6</td>
-							<td>text7</td>
-							<td>text8</td>
-							<td>text9</td>
-						</tr>
+								<td>text1</td>
+								<td>text2</td>
+								<td>text3</td>
+								<td>text4</td>
+								<td>text5</td>
+								<td>text6</td>
+								<td>text7</td>
+								<td>text8</td>
+								<td>text9</td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
-			<!-- Table end -->
-			<!-- footer total -->
-			<section class="total">
-				<div class="attendance">
-					<h5>মোট হাজিরা</h5>
-					<h5>50</h5>
-				</div>
-				<div class="enter">
-					<h5>প্রবেশ</h5>
-					<h5>50</h5>
-				</div>
-				<div class="exit">
-					<h5>প্রস্থান</h5>
-					<h5>50</h5>
-					<h5>0.02%</h5>
-				</div>
-				<div class="fine">
-					<h5>জরিমানা</h5>
-					<h5>০ জন</h5>
-					<h5>0.00%</h5>
-					<h5>0 টাকা</h5>
-				</div>
+				<!-- Table end -->
+				<!-- footer total -->
+				<section class="total">
+					<div class="attendance">
+						<h5>মোট হাজিরা</h5>
+						<h5>50</h5>
+					</div>
+					<div class="enter">
+						<h5>প্রবেশ</h5>
+						<h5>50</h5>
+					</div>
+					<div class="exit">
+						<h5>প্রস্থান</h5>
+						<h5>50</h5>
+						<h5>0.02%</h5>
+					</div>
+					<div class="fine">
+						<h5>জরিমানা</h5>
+						<h5>০ জন</h5>
+						<h5>0.00%</h5>
+						<h5>0 টাকা</h5>
+					</div>
+				</section>
 			</section>
 		</section>
 	</body>

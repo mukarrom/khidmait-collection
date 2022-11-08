@@ -6,132 +6,159 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Income</title>
 		<link rel="stylesheet" href="income.css" />
+		<!-- Normalize or reset CSS with your favorite library -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+
+		<!-- Load paper.css for happy printing -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css"
+		/>
+
+		<!-- Set page size here: A5, A4 or A3 -->
+		<!-- Set also "landscape" if you need -->
+		<style>
+			@page {
+				size: A4 landscape;
+			}
+		</style>
 	</head>
-	<body>
-		<header>
-			<div class="college-name">রফিকুল ইসলাম মহিলা কলেজ</div>
-			<div class="about">(উচ্চ মাধ্যমিক, ডিগ্রি ও অনার্স অধিভুক্ত)</div>
-			<div class="address">উপজেলা-ভৈরব, জেলা-কিশোরগঞ্জ</div>
-			<div class="income">আয় বিবরণী: 2022</div>
-		</header>
-		<main>
-			<table>
-				<thead>
-					<tr>
-					<th>ক্রমিক</th>
-					<th>হিসাবের নাম</th>
-					<th>জানুঃ ২২</th>
-					<th>ফেব্রু ২২</th>
-					<th>মার্চ ২২</th>
-					<th>এপ্রিঃ ২২</th>
-					<th>মে ২২</th>
-					<th>জুন ২২</th>
-					<th>জুলাই ২২</th>
-					<th>আগস্ট ২২</th>
-					<th>সেপ্টেঃ ২২</th>
-					<th>অক্টোঃ ২২</th>
-					<th>নভেঃ ২২</th>
-					<th>ডিসেঃ ২২</th>
-					<th>মোট টাকা</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-					<td>১</td>
-					<td>ভর্তি</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
-					<td>10</td>
-					<td>11</td>
-					<td>12</td>
-					<td>13</td>
-					<td>14</td>
-					<td>৮৫৮৫৮</td>
-				</tr>
-				<tr>
-					<td>২</td>
-					<td>বেতন</td>
-					<td>3</td>
-					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
-					<td>9</td>
-					<td>10</td>
-					<td>11</td>
-					<td>12</td>
-					<td>13</td>
-					<td>14</td>
-					<td>৫৪৪৩৪</td>
-				</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td colspan="2">সর্বমোট (টাকা)</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
-						<td>8</td>
-						<td>9</td>
-						<td>10</td>
-						<td>11</td>
-						<td>12</td>
-						<td>13</td>
-						<td>14</td>
-					</tr>
-					<tr>
-						<td colspan="2">সর্বমোট (রশিদ)</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
-						<td>8</td>
-						<td>9</td>
-						<td>10</td>
-						<td>11</td>
-						<td>12</td>
-						<td>13</td>
-						<td>14</td>
-					</tr>
-					<tr>
-						<td colspan="2">সর্বমোট (দিন)</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
-						<td>8</td>
-						<td>9</td>
-						<td>10</td>
-						<td>11</td>
-						<td>12</td>
-						<td>13</td>
-						<td>14</td>
-					</tr>
-				</tfoot>
-			</table>
-		</main>
-		<footer>
-			<div class="signature">
-				<div class="buyer">
-					<span>হিসাব রক্ষক</span>
+
+	<!-- Set "A5", "A4" or "A3" for class name -->
+	<!-- Set also "landscape" if you need -->
+	<body class="A4 landscape">
+		<!-- Each sheet element should have the class "sheet" -->
+		<!-- "padding-**mm" is optional: you can set 10, 15, 20 or 25 -->
+		<section class="sheet padding-10mm">
+			<!-- Write HTML just like a web page -->
+			<header>
+				<div class="college-name">রফিকুল ইসলাম মহিলা কলেজ</div>
+				<div class="about">(উচ্চ মাধ্যমিক, ডিগ্রি ও অনার্স অধিভুক্ত)</div>
+				<div class="address">উপজেলা-ভৈরব, জেলা-কিশোরগঞ্জ</div>
+				<div class="income">আয় বিবরণী: 2022</div>
+			</header>
+			<main>
+				<table>
+					<thead>
+						<tr>
+							<th>ক্রমিক</th>
+							<th>হিসাবের নাম</th>
+							<th>জানুঃ ২২</th>
+							<th>ফেব্রু ২২</th>
+							<th>মার্চ ২২</th>
+							<th>এপ্রিঃ ২২</th>
+							<th>মে ২২</th>
+							<th>জুন ২২</th>
+							<th>জুলাই ২২</th>
+							<th>আগস্ট ২২</th>
+							<th>সেপ্টেঃ ২২</th>
+							<th>অক্টোঃ ২২</th>
+							<th>নভেঃ ২২</th>
+							<th>ডিসেঃ ২২</th>
+							<th>মোট টাকা</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>১</td>
+							<td>ভর্তি</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>৮৫৮৫৮</td>
+						</tr>
+						<tr>
+							<td>২</td>
+							<td>বেতন</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>৫৪৪৩৪</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2">সর্বমোট (টাকা)</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td colspan="2">সর্বমোট (রশিদ)</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td colspan="2">সর্বমোট (দিন)</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+					</tfoot>
+				</table>
+			</main>
+			<footer>
+				<div class="signature">
+					<div class="buyer">
+						<span>হিসাব রক্ষক</span>
+					</div>
+					<div class="seller">
+						<span>সহকারী হিসাব রক্ষক</span>
+					</div>
 				</div>
-				<div class="seller">
-					<span>সহকারী হিসাব রক্ষক</span>
-				</div>
-			</div>
-		</footer>
+			</footer>
+		</section>
 	</body>
 </html>

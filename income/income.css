@@ -6,13 +6,13 @@
 * height: 1122.5px;
 */
 /* Print Setting */
-@media print {
+/* @media print {
 	@page {
 		size: 1122.5px 793.7px;
 		size: landscape;
 		margin: 1rem;
 	}
-}
+} */
 /* reset */
 * {
 	margin: 0;
@@ -27,8 +27,8 @@ body {
 }
 /* ==> Container <== */
 .container {
-	height: 793px;
-	width: 1122px;
+	height: 100%;
+	width: 100%;
 	border: 1px solid black;
 	position: relative;
 }
