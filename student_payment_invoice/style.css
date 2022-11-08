@@ -6,13 +6,13 @@
 * height: 793.7px;
 */
 /* Print Setting */
-@media print {
+/* @media print {
 	@page {
 		size: 559.37px 793.7px;
 		size: portrait;
 		margin: 0.5rem;
 	}
-}
+} */
 /* reset */
 * {
 	margin: 0;

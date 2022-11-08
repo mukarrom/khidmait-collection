@@ -98,9 +98,12 @@ tfoot tr:last-child {
 /* signature */
 
 .signature {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
 	display: flex;
 	justify-content: space-between;
-	margin: 6rem 10px;
+	/* margin: 6rem 10px; */
   font-size: 12px;
 }
 .signature div {

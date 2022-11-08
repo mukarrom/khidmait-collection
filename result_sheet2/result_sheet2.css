@@ -1,18 +1,6 @@
 @import url('https://fonts.maateen.me/kalpurush/font.css');
 
-/**
-* ==> A4 size <==
-* width: 816px;
-* height: 1344px;
-*/
-/* Print Setting */
-@media print {
-	@page {
-		size: 1344px 816px;
-		size: landscape;
-		margin: 0.5rem;
-	}
-}
+
 /* reset */
 * {
 	margin: 0;
