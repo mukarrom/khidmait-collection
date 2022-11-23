@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+/* @media print {
+	@page {
+		size: 559.37px 793.7px;
+		size: portrait;
+		margin: 1rem;
+	}
+} */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+hr {
+	margin: 0.5rem 0;
+	color: #000;
+	border: 0;
+	border-top: 1px solid;
+	opacity: 0.25;
+}
+p {
+	font-size: 14px;
+	/* font-weight: 600; */
+}
+.page {
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid red; */
+	margin: auto;
+	padding: 1rem 10px;
+}
+
+/* header */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+/* left */
+.left {
+	text-align: start;
+}
+
+.logo {
+	width: 200px;
+	height: auto;
+}
+.logo img {
+	width: 100%;
+}
+
+/* .page .header div:first-child {
+	width: 50%;
+} */
+/* .page .header div:last-child {
+	text-align: end;
+} */
+.page .header div:last-child h4 {
+	color: #999999;
+	text-transform: uppercase;
+}
+
+/* 2nd section */
+.page section:nth-child(2) {
+	display: flex;
+	gap: 1.5rem;
+	margin-top: 2.5rem;
+}
+.page section:nth-child(2) div:first-child {
+	width: 50%;
+}
+.page section:nth-child(2) div:first-child p:last-child {
+	color: #302e2e;
+}
+/* 3rd section: phone & email */
+.page section:nth-child(3) {
+	margin: 1rem 0;
+}
+/* 4th section: table */
+.billing-table table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 12px;
+}
+.billing-table th:last-child {
+	width: 20%;
+}
+.billing-table td:last-child {
+	text-align: end;
+}
+.billing-table th,
+.billing-table td {
+	text-align: left;
+	padding: 4px 12px;
+	border: 1px solid #999999;
+}
+
+.billing-table tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+.billing-table th {
+	background-color: #cccccc;
+	color: #000;
+	text-align: center;
+}
+/* total table */
+.total-table {
+	width: 50%;
+	border-collapse: collapse;
+}
+.total-table tr td {
+	width: 50%;
+}
+.total-table tr td {
+	border: 1px solid #a48f8f;
+	padding: 3px 5px;
+}
+.total-table tr td:first-child {
+	text-align: right;
+}
+/* 5th section: total */
+.total-sec {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 2rem 0;
+}
+
+/* signature */
+.sold-by {
+	text-align: right;
+}
